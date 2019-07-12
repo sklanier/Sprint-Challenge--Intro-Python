@@ -28,7 +28,7 @@ def cityreader(cities=[]):
   # For each city record, create a new City instance and add it to the 
   # `cities` list
 
-  with open('./src/cityreader/cities.csv', 'r') as c:
+  with open('./cities.csv', 'r') as c:
     readlist = csv.reader(c)
     for row in readlist:
       if row[0] != 'city':
